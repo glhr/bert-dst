@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 
 # TASK can be "dstc2_clean", "woz2", "sim-m", or "sim-r"
-TASK="dstc2_clean"
+TASK="sim-m"
 # Directory for dstc2-clean, woz_2.0, sim-M, or sim-R, which contains json files
-DATA_DIR=/path/to/dstc2-clean
+DATA_DIR=/home/nemo/simulated-dialogue/sim-M
 # Directory of the pre-trained [BERT-Base, Uncased] model
-PRETRAINED_BERT=/path/to/uncased_L-12_H-768_A-12
+PRETRAINED_BERT=/home/nemo/bert/uncased_L-12_H-768_A-12
 # Output directory of trained checkpoints
-OUTPUT_DIR=/path/to/output
+OUTPUT_DIR=/home/nemo/bert-dst/output
 
 mkdir -p $OUTPUT_DIR
-python main.py \
+python3.6 main.py \
   --task_name=${TASK} \
   --do_train=true \
   --train_batch_size=16 \
