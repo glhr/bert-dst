@@ -16,7 +16,7 @@ Tested on Python 3.6, Tensorflow==1.13.0rc0
 
 ## Install required packages
 
-```
+```bash
 ## Create a virtual environment (optional but recommended)
 python3.6 -m venv venv
 source venv/bin/activate
