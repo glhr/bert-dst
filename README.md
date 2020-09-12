@@ -17,7 +17,12 @@ Tested on Python 3.6, Tensorflow==1.13.0rc0
 ## Install required packages
 
 ```
-python3.6 -m pip install -r requirements.txt
+## Create a virtual environment (optional but recommended)
+python3.6 -m venv venv
+source venv/bin/activate
+
+pip install tensorflow==1.13.0rc0
+pip install tensorflow_estimator==1.13.0rc0
 ```
 
 ## Additional requirements (no need to install, just provide the paths in code)
